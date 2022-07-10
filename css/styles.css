@@ -140,51 +140,50 @@ h1, h2, h3, h4, {
   text-decoration: none;
 }
 
-.contacts-list .link:hover,
-.contacts-list .link:focus {
-  color: var(--accent-color--);
-}
+
 
 .contacts-list {
   display: flex;
   padding-left: 0;
   margin-left: auto;
-      
-        justify-content: center;
-        align-items: center;
+    
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts-list .item + .item {
   margin-left: 50px;
 }
 
-.item.contacts-icon{
-  fill: var(--icon-fii--);
-}
-
-.item.contacts-icon:hover{
-  fill:var(--accent-color--)
-}
 .item.logo{
     display: display-flex;
         align-items: center;
         justify-content: center;
+}
 
-}  
- .link.header{
+.link.header {
   display: flex;
-  justify-content:  flex-start;
-  width: 160px;
- }     
-
- .contacts-icon{
-  fill:var(--primary-text-color--)
- }
-.contacts-icon:hover{
-fill: var(--accent-color--);
-color: ;
+  align-items: center;
 
 }
+.link.header:hover,
+.link.header:focus{
+  color: var(--accent-color--);
+  fill: var(--accent-color--);
+}
+
+
+.item.contacts-icon{
+  fill: var(--icon-fii--);
+}
+
+.contacts-icon:hover,
+.contacts-item:focus{
+  fill:var(--accent-color--);
+}
+
+
+
 
 
 /* HERO */
@@ -509,7 +508,8 @@ border-radius: 0px 0px 4px 4px;
 
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   fill: var(--button-color--);
   background-color: var(--accent-color--);
   color: #fff;
@@ -522,7 +522,9 @@ border-radius: 0px 0px 4px 4px;
     /* fill: var(--icon-fii--) */
 }
 
-.social-link-icon:hover {
+.social-link-icon:hover,
+.social-link-icon:focus
+ {
   fill: var(--button-color--)
 }
 
@@ -575,13 +577,23 @@ align-items: center;
 .clients-link:not(:last-child){
 margin-right: 30px;
 } 
+.clients-link:hover,
+.clients-link:focus {
+  fill:var(--accent-color--);
+  color:var(--accent-color--);
+     
+}
 
-.clients.icon:hover {
-  fill: var(--accent-color--);
+
+.clients.icon:hover,
+.clients.icon:focus {
+  fill:var(--accent-color--);
   border: 1px solid var(--accent-color--);
   border-radius: 4px;
+  color: #2196f3;
 }
-                  
+                     
+
 /* футер */
 
 footer {
@@ -626,6 +638,11 @@ footer {
   color: var(--footer-text-color--);
   text-decoration: none;
 }
+.item.address .link.footer:hover,
+.item.address .link.footer:focus{
+  color: var(--accent-color--);
+  }
+
 
 .logo.footer {
   display: block;
@@ -730,7 +747,9 @@ background-position: 50% 50%;
 border-radius: 50%;
 
 }
-.social-link.network:hover{
+
+.social-link.network:hover,
+.social-link.network:focus{
   background-color: #2196f3;
   color: #fff;
   }
